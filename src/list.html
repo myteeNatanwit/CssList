@@ -1,0 +1,66 @@
+<style>
+/*Basic reset*/
+* {margin: 0; padding: 0;}
+
+body {
+	background: #4EB889;
+	font-family: Nunito, arial, verdana;
+}
+#list {
+	background: #004050;
+	width: 250px;
+	color: white;
+	box-shadow: 
+		0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+		0 0 200px 1px rgba(255, 255, 255, 0.5);
+}
+
+#list h3 {
+	font-size: 18px;
+	padding: 10px;
+	line-height: 34px;
+	padding: 10px;
+	cursor: pointer;
+	background: #003040; 
+	background: linear-gradient(#003040, #002535);
+}
+#list h3:hover {
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+
+#list li {
+	list-style-type: none;
+}
+
+#list ul ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 27px;
+	display: block;
+	padding: 5px 15px;
+    border:1px solid #999;
+	transition: all 0.15s;
+}
+
+#list ul ul li a:hover {
+	background: #003545;
+	border-left: 5px solid lightgreen;
+}
+
+</style>
+
+<div id="list">
+	<ul>
+	<h3>Jokes Books</h3>
+    <ul>
+			<li><a href="#" onclick="golist('Doctor.txt')">Doctor</a></li>
+			<li><a href="#" onclick="golist('Priest.txt')">Priest</a></li>
+			<li><a href="#" onclick="golist('Blond.txt')">Blond</a></li>
+			<li><a href="#" onclick="golist('Dirty.txt')">Dirty</a></li>
+			<li><a href="#" onclick="golist('Adult.txt')">Adult</a></li>
+			<li><a href="#" onclick="golist('Mixed.txt')">Mixed</a></li>
+			<li><a href="#" onclick="golist('Pickup.txt')">Pickup</a></li>
+	</ul>
+	</ul>
+</div>
